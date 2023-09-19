@@ -5,6 +5,7 @@ import Examportal.Entity.UserRole;
 import Examportal.Repository.RoleRepository;
 import Examportal.Repository.UserRepository;
 import Examportal.Service.UserService;
+import Examportal.helper.UserFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,7 +25,7 @@ public class UserServiceImplementation implements UserService {
        User local = this.userRepository.findByUserName(user.getUsername());
        if(local!=null){
            System.out.println("user already present");
-           throw new Exception("User Already Present");
+           throw new UserFoundException();
        }else{
            //hm yha user ka role nikalenge  userroles se jo aarha hai aur usko database me save krenge
            for(UserRole ur:userRoles){

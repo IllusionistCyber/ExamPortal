@@ -45,9 +45,9 @@ public class User implements UserDetails {
         this.userRoles = userRoles;
     }
 
-    public User(Long id, String username, String password, String firstName, String lastName, String email, String phone, boolean enabled, String profile) {
+    public User(Long id, String userName, String password, String firstName, String lastName, String email, String phone, boolean enabled, String profile) {
         this.id = id;
-        this.userName = username;
+        this.userName = userName;
         this.password = password;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -92,8 +92,8 @@ public class User implements UserDetails {
         return true;
     }
 
-    public void setUsername(String username) {
-        this.userName = username;
+    public void setUsername(String userName) {
+        this.userName = userName;
     }
 
     @Override

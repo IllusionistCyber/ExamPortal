@@ -58,11 +58,8 @@ public class AuthenticateController {
 
 
     private void authenticate(String username, String password) throws Exception {
-
         try {
-
             authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(username, password));
-
         } catch (DisabledException e) {
             throw new Exception("USER DISABLED " + e.getMessage());
         } catch (BadCredentialsException e) {
@@ -71,12 +68,9 @@ public class AuthenticateController {
     }
 
     //return the details of current user
+    @CrossOrigin("*")
     @GetMapping("/current-user")
     public User getCurrentUser(Principal principal) {
         return ((User) this.userDetailService.loadUserByUsername(principal.getName()));
-
     }
-
-
-
 }

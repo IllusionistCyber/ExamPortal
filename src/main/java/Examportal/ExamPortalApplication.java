@@ -35,17 +35,17 @@ public class ExamPortalApplication  implements CommandLineRunner {
 //		jo bhi user aur role aarhe hai uske hmne ek userrole me connect kiya hai
 //		 aur uss userrole ko ek set me add kiya hai jo ki userrole hai
 //		User user = new User();
-//		user.setUsername("raushan");
-//		user.setFirstName("Raushan");
-//		user.setLastName("Raj");
-//		user.setEmail("Raushan@gmail.com");
+//		user.setUsername("radhika");
+//		user.setFirstName("Radhika");
+//		user.setLastName("Wadhwa");
+//		user.setEmail("radhika@gmail.com");
 //		user.setPhone("7779833016");
 //		user.setProfile("default.png");
-//		user.setPassword(this.bCryptPasswordEncoder.encode("abc"));
+//		user.setPassword(this.bCryptPasswordEncoder.encode("raj"));
 //
 //		Role role = new Role();
-//		role.setRoleId(44L);
-//		role.setRoleName("Admin");
+//		role.setRoleId(46L);
+//		role.setRoleName("NORMAL");
 //		//hm ab user me userRole set krenge
 //		Set<UserRole> user_roleSet = new HashSet<>();
 //		UserRole userRole = new UserRole();
